@@ -49,7 +49,7 @@ public class ToDoServiceImplement implements ToDoService {
     public void updateTodo(Long id, Todo todo){ // a method that updates the to do using item id/index
         Todo todoFromDB = toDoRepo.findById(id).get(); //toDoFromDB is declared in this line
         todoFromDB.setTaskName(todo.getTaskName()); // declared in the Entity file
-        todoFromDB.setDesc(todo.getDesc()); //declare in entity file
+      //  todoFromDB.setDesc(todo.getDesc()); //declare in entity file
         toDoRepo.save(todoFromDB);
     }
 

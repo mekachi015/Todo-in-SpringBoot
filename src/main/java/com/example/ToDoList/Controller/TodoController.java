@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/todo")
+@RequestMapping("/api/todo/")
 public class TodoController {
     @Autowired
     private ToDoServiceImplement todoService;
@@ -30,7 +30,7 @@ public class TodoController {
 
 
     @PutMapping({"/id"})
-    public  void upddate(@PathVariable Long id, @RequestBody Todo todo){
+    public  void update(@PathVariable Long id, @RequestBody Todo todo){
         this.todoService.updateTodo(id, todo );
     }
 

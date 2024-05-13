@@ -24,7 +24,7 @@ public class Todo {
     private String taskName; //initializing the task name
 
     @NonNull
-    private String desc; //initializing the task description
+    private String description; //initializing the task description
 
     @CreatedDate //specicies to sql the date of creation
     Timestamp dateCreated;
@@ -39,10 +39,10 @@ public class Todo {
     }
 
     public String getDesc() {
-        return desc; //a method that returns the description
+        return description; //a method that returns the description
     }
 
     public void setDesc(String desc) {
-        this.desc = desc; //a method that sets the description
+        this.description = desc; //a method that sets the description
     }
 }
